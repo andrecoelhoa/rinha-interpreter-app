@@ -1,0 +1,11 @@
+
+version: '3.4'
+
+services:
+  rinhainterpreterapp:
+    image: rinhainterpreterapp
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./source:/var/rinha
